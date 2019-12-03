@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
+  m_Name: Sprite 77
+  m_EditorClassIdentifier: 
+  _infoImage: {fileID: 21300000, guid: e701c7a7eb60c6f49a66292201f2fb0c, type: 3}
+  _info: Choose one that is FALSE about Mining?
+  _answers:
+  - _info: Promotes growth of trees
+    _isCorrect: 1
+  - _info: Formation of sinkholes
+    _isCorrect: 0
+  - _info: Leakage of chemicals from mining sites
+    _isCorrect: 0
+  - _info: Contamination of surface water
+    _isCorrect: 0
+  _useTimer: 1
+  _timer: 10
+  _answerType: 1
+  _addScore: 10

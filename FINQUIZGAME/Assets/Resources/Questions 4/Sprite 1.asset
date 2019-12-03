@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
+  m_Name: Sprite 1
+  m_EditorClassIdentifier: 
+  _infoImage: {fileID: 21300000, guid: ab6e3cba2b5254f4f817b1f071aaa94b, type: 3}
+  _info: 'One of the main causes of acid rain is ______  '
+  _answers:
+  - _info: 'Sulphur dioxide '
+    _isCorrect: 0
+  - _info: 'Carbon dioxide '
+    _isCorrect: 0
+  - _info: 'Nitrogen dioxide '
+    _isCorrect: 0
+  - _info: 'all of the above '
+    _isCorrect: 1
+  _useTimer: 1
+  _timer: 10
+  _answerType: 1
+  _addScore: 10
