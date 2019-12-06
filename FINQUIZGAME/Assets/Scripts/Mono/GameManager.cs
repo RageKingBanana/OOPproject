@@ -28,7 +28,7 @@ public class GameManager : MonoBehaviour {
 
     private             IEnumerator         IE_WaitTillNextRound    = null;
     private             IEnumerator         IE_StartTimer           = null;
-
+    private bool pressedinc = false;
     private             bool                IsFinished
     {
         get
@@ -150,6 +150,7 @@ public class GameManager : MonoBehaviour {
         UpdateTimer(false);
         bool isCorrect = CheckAnswers();
         FinishedQuestions.Add(currentQuestion);
+        pressedinc = false;
 
         UpdateScore((isCorrect) ? Questions[currentQuestion].AddScore : -Questions[currentQuestion].AddScore);
 
@@ -233,6 +234,12 @@ public class GameManager : MonoBehaviour {
     IEnumerator WaitTillNextRound()
     {
         yield return new WaitForSeconds(GameUtility.ResolutionDelayTime);
+        while (!pressedinc)
+        {
+            if (Input.touchCount > 0 || Input.GetMouseButton(0))
+                pressedinc = true;
+            yield return null;
+        }
         Display();
     }
 

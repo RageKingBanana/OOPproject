@@ -82,6 +82,8 @@ public class UIManager : MonoBehaviour {
 
     private             IEnumerator            IE_DisplayTimedResolution    = null;
 
+    private bool pressedinc = false;
+
     #endregion
 
     #region Default Unity methods
@@ -131,11 +133,12 @@ public class UIManager : MonoBehaviour {
     void DisplayResolution(ResolutionScreenType type, int score)
     {
         UpdateResUI(type, score);
+        pressedinc = false;
         uIElements.ResolutionScreenAnimator.SetInteger(resStateParaHash, 2);
         uIElements.MainCanvasGroup.blocksRaycasts = false;
-
         if (type != ResolutionScreenType.Finish)
         {
+            
             if (IE_DisplayTimedResolution != null)
             {
                 StopCoroutine(IE_DisplayTimedResolution);
@@ -147,6 +150,12 @@ public class UIManager : MonoBehaviour {
     IEnumerator DisplayTimedResolution()
     {
         yield return new WaitForSeconds(GameUtility.ResolutionDelayTime);
+        while (!pressedinc)
+        {
+            if (Input.touchCount > 0 || Input.GetMouseButton(0))
+                pressedinc = true;
+            yield return null;
+        }
         uIElements.ResolutionScreenAnimator.SetInteger(resStateParaHash, 1);
         uIElements.MainCanvasGroup.blocksRaycasts = true;
     }
