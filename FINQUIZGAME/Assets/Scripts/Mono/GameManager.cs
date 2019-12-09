@@ -403,6 +403,7 @@ public class GameManager : MonoBehaviour {
                 random = UnityEngine.Random.Range(0, Questions.Length);
             } while (FinishedQuestions.Contains(random) || random == currentQuestion);
         }
+        PlayerPrefs.SetInt("QuesAns",random);
         return random;
     }
 
