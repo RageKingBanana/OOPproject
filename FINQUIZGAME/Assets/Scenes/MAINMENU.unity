@@ -984,7 +984,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 569276833}
+      - m_Target: {fileID: 380856108}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3566,7 +3566,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 569276833}
+      - m_Target: {fileID: 380856108}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -3969,7 +3969,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 569276833}
+      - m_Target: {fileID: 380856108}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
@@ -5832,7 +5832,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1495912526
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6423,7 +6423,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 569276833}
+      - m_Target: {fileID: 380856108}
         m_MethodName: SetActive
         m_Mode: 6
         m_Arguments:
