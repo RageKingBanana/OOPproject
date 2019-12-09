@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: 6
+  m_Name: 8
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: Why is the Philippines is considered to be an earthquake prone country?
+  _info: Emergency kits should contain food in case of emergency, what is not needed?
   _answers:
-  - _info: The Philippines is an archipelago.
+  - _info: Canned goods
     _isCorrect: 0
-  - _info: The Philippines is located near the Pacific Ring of Fire.
+  - _info: Bottled Water
+    _isCorrect: 0
+  - _info: Freezed Ham
     _isCorrect: 1
-  - _info: The Philippines has so many mountains.
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1
