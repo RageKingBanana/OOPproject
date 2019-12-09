@@ -327,18 +327,7 @@ public class GameManager : MonoBehaviour {
             }
         }
     }
-    public void Tips()
-    {
-        if (SceneManager.GetActiveScene().buildIndex == 6)
-        {
-            Object[] objs = Resources.LoadAll("Questions 4", typeof(Question));
-            _questions = new Question[objs.Length];
-            for (int i = 0; i < objs.Length; i++)
-            {
-                _questions[i] = (Question)objs[i];
-            }
-        }
-    }
+   
 
     /// <summary>
     /// Function that is called restart the game.
@@ -388,11 +377,11 @@ public class GameManager : MonoBehaviour {
             events.CurrentFinalScore = 0;
         }
 
-
         if (events.ScoreUpdated != null)
         {
             events.ScoreUpdated();
         }
+
     }
 
     #region Getters
@@ -414,7 +403,6 @@ public class GameManager : MonoBehaviour {
                 random = UnityEngine.Random.Range(0, Questions.Length);
             } while (FinishedQuestions.Contains(random) || random == currentQuestion);
         }
-        PlayerPrefs.SetInt("QuesAns", random);
         return random;
     }
 
