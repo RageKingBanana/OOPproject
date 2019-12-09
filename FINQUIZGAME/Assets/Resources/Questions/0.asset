@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: Sprite 11 Burning of Fossil Fuel
+  m_Name: 0
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 21300000, guid: 2e31ab2d159b218438c63c31d1b51e27, type: 3}
-  _info: 'Global atmospheric temperatures are likely to be increased due to:'
+  _infoImage: {fileID: 0}
+  _info: What are the natural cause of earthquakes?
   _answers:
-  - _info: Burning of fossil fuel
+  - _info: Sliding of tectonic plates
     _isCorrect: 1
-  - _info: Water pollution
+  - _info: Volcanic activities
+    _isCorrect: 1
+  - _info: Global warming
     _isCorrect: 0
-  - _info: Soil erosion
-    _isCorrect: 0
-  - _info: None of the above
-    _isCorrect: 0
-  _useTimer: 1
-  _timer: 10
-  _answerType: 1
-  _addScore: 15
+  _useTimer: 0
+  _timer: 0
+  _answerType: 0
+  _addScore: 10

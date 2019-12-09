@@ -261,7 +261,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction Management Council is the agency that is responsible for ensuring the protection and welfare of the people.";
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction Management Council(NDRRMC) is the agency that is responsible for ensuring the protection and welfare of the people.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 3)
@@ -271,7 +271,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "Philippine Atmospheric, Geophysical and Astronomical Services Administration is the agency responsible for assessing and forecasting weather, flood, and other conditions essential for the welfare of the people.";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Atmospheric, Geophysical and Astronomical Services Administration(PAG-ASA) is the agency responsible for assessing and forecasting weather, flood, and other conditions essential for the welfare of the people.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 1)
@@ -299,7 +299,7 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.CorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "Familiarize yourself with all possible exit routes.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 14)
@@ -314,62 +314,62 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (i == 12)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Evacuate to an open area.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 11)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Exit the building via stairs.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 10)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Stay away from glass windows, shelves, and heavy and hanging objects.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Duck, cover and hold under somewhere stable.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Stay calm and stay put.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Learn simple first aid techniques.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "Discuss a designated meet up location with family in case you’re separated.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "Prepare your emergency kit";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Secure heavy furniture and hanging objects.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "Store harmful chemicals and flammable materials properly.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Have necessary house repairs fixed to avoid further damage";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     break;

@@ -10,20 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: Sprite 12 (All of the above)
+  m_Name: 1
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 21300000, guid: 3a3c798641760424282919ec4336c9a3, type: 3}
-  _info: 'Global Warming could affect:'
+  _infoImage: {fileID: 0}
+  _info: What are the possible effects of earthquakes?
   _answers:
-  - _info: Climate
-    _isCorrect: 0
-  - _info: Food production
-    _isCorrect: 0
-  - _info: Melting of glaciers
-    _isCorrect: 0
-  - _info: All of the above
+  - _info: Aftershocks
+    _isCorrect: 1
+  - _info: Tsunamis
+    _isCorrect: 1
+  - _info: Landslides
     _isCorrect: 1
   _useTimer: 0
-  _timer: 10
-  _answerType: 1
-  _addScore: 15
+  _timer: 0
+  _answerType: 0
+  _addScore: 10

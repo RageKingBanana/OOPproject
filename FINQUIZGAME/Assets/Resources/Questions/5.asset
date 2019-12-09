@@ -10,21 +10,19 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: Sprite 52 elephant
+  m_Name: 5
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 21300000, guid: 57e19047c1ca8a3439a2a3f85cd883df, type: 3}
-  _info: It is the only animal that can't jump. They are illegally killed for their
-    ivory tusks
+  _infoImage: {fileID: 0}
+  _info: NDRRMC mad a mobile application to provide a handy electronic resources to
+    the public that can be utilize in case of emergency. What is the application called?
   _answers:
-  - _info: Walrus
-    _isCorrect: 0
-  - _info: 'Common Warthog '
-    _isCorrect: 0
-  - _info: Babirusa
-    _isCorrect: 0
-  - _info: Elephant
+  - _info: Batingaw
     _isCorrect: 1
-  _useTimer: 1
-  _timer: 10
+  - _info: Alerto Pinas
+    _isCorrect: 0
+  - _info: NDRRMC Alerts
+    _isCorrect: 0
+  _useTimer: 0
+  _timer: 0
   _answerType: 1
-  _addScore: 5
+  _addScore: 10
