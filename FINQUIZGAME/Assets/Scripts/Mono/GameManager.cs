@@ -374,7 +374,20 @@ public class GameManager : MonoBehaviour {
     /// </summary>
     private void UpdateScore(int add)
     {
-        events.CurrentFinalScore += add;
+        if (events.CurrentFinalScore >= 0)
+        {
+            if ((events.CurrentFinalScore + add) < 0)
+            {
+                events.CurrentFinalScore = 0;
+            }
+            else
+                events.CurrentFinalScore += add;
+        }
+        else
+        {
+            events.CurrentFinalScore = 0;
+        }
+
 
         if (events.ScoreUpdated != null)
         {
@@ -401,6 +414,7 @@ public class GameManager : MonoBehaviour {
                 random = UnityEngine.Random.Range(0, Questions.Length);
             } while (FinishedQuestions.Contains(random) || random == currentQuestion);
         }
+        PlayerPrefs.SetInt("QuesAns", random);
         return random;
     }
 

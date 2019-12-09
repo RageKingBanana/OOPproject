@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 [Serializable()]
 public struct UIManagerParameters
@@ -81,7 +82,7 @@ public class UIManager : MonoBehaviour {
     private             int                    resStateParaHash             = 0;
 
     private             IEnumerator            IE_DisplayTimedResolution    = null;
-
+    public int AnsQues;
     private bool pressedinc = false;
 
     #endregion
@@ -166,28 +167,813 @@ public class UIManager : MonoBehaviour {
     void UpdateResUI(ResolutionScreenType type, int score)
     {
         var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-
-        switch (type)
+        int i;
+        AnsQues = PlayerPrefs.GetInt("QuesAns");
+        i = AnsQues;
+        if (SceneManager.GetActiveScene().buildIndex == 1)
         {
-            case ResolutionScreenType.Correct:
-                uIElements.ResolutionBG.color = parameters.CorrectBGColor;
-                uIElements.ResolutionStateInfoText.text = "CORRECT!";
-                uIElements.ResolutionScoreText.text = "+" + score;
-                break;
-            case ResolutionScreenType.Incorrect:
-                uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
-                uIElements.ResolutionStateInfoText.text = "WRONG!";
-                uIElements.ResolutionScoreText.text = "-" + score;
-                break;
-            case ResolutionScreenType.Finish:
-                uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
 
-                StartCoroutine(CalculateScore());
-                uIElements.FinishUIElements.gameObject.SetActive(true);
-                uIElements.HighScoreText.gameObject.SetActive(true);
-                uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
-                break;
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 2)
+        {
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 4)
+        {
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 19)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 18)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 17)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 16)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 15)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 19)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 18)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 17)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 16)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 15)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
+        }
+        if (SceneManager.GetActiveScene().buildIndex == 5)
+        {
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 19)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 18)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 17)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 16)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 15)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 19)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 18)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 17)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 16)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 15)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
         }
     }
 
@@ -197,28 +983,8 @@ public class UIManager : MonoBehaviour {
     int scoreValue;
     IEnumerator CalculateScore()
     {
-        if (events.CurrentFinalScore > 0)
-        {
-            scoreValue = 0;
-            while (scoreValue < events.CurrentFinalScore)
-            {
-                scoreValue++;
-                uIElements.ResolutionScoreText.text = scoreValue.ToString();
-                
-                yield return null;
-            }
-        }
-            
-        else
-        {
-            scoreValue = 0;
-            while (scoreValue > events.CurrentFinalScore)
-            {
-                scoreValue--;
-                uIElements.ResolutionScoreText.text = scoreValue.ToString();
-                yield return null;
-            }
-        }
+            uIElements.ResolutionScoreText.text = events.CurrentFinalScore.ToString();
+            yield return null;
     }
 
     /// <summary>
