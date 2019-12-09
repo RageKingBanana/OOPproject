@@ -178,52 +178,52 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.CorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "The natural causes of earthquakes are sliding of tectonic plates and volcanic activities.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Learning simple first aid techniques can be very advantageous. ";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Freezed Ham is not included because it is needed to be processed first in order to eat it.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Spare Batteries and Flashlight are included in the emergency kit.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "The Philippines is considered to be an earthquake prone country because it is located near the Pacific Ring of Fire.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "“Batingaw” is the mobile application developed by NDRRMC for public use.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction Management Council is the agency that is responsible for ensuring the protection and welfare of the people.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Institute of Volcanology and Seismology is the agency responsible for mitigation of disasters that arises from geotectonic phenomenas like volcanic eruptions, earthquakes, and tsunamis.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Atmospheric, Geophysical and Astronomical Services Administration is the agency responsible for assessing and forecasting weather, flood, and other conditions essential for the welfare of the people.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Aftershocks, Tsunamis, Landslides are all possible effects of earthquakes.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     break;
@@ -231,52 +231,52 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "The natural causes of earthquakes are sliding of tectonic plates and volcanic activities.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Learning simple first aid techniques can be very advantageous. ";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Freezed Ham is not included because it is needed to be processed first in order to eat it.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Spare Batteries and Flashlight are included in the emergency kit.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "The Philippines is considered to be an earthquake prone country because it is located near the Pacific Ring of Fire.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "“Batingaw” is the mobile application developed by NDRRMC for public use.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction Management Council is the agency that is responsible for ensuring the protection and welfare of the people.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Institute of Volcanology and Seismology is the agency responsible for mitigation of disasters that arises from geotectonic phenomenas like volcanic eruptions, earthquakes, and tsunamis.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Atmospheric, Geophysical and Astronomical Services Administration is the agency responsible for assessing and forecasting weather, flood, and other conditions essential for the welfare of the people.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Aftershocks, Tsunamis, Landslides are all possible effects of earthquakes.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     break;
