@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 18
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What is the necessary skill to be learned in case of emergency?
+  _info: What to do DURING earthquakes?
   _answers:
-  - _info: Learn simple first aid techniques.
-    _isCorrect: 1
-  - _info: Learn self-defense.
+  - _info: Shout and run.
     _isCorrect: 0
-  - _info: Learn how to code.
+  - _info: Stay calm and stay put.
+    _isCorrect: 1
+  - _info: Duck, cover and hold under somewhere stable
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

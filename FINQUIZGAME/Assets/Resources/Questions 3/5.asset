@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: NDRRMC mad a mobile application to provide a handy electronic resources to
-    the public that can be utilize in case of emergency. What is the application called?
+  _info: What should you do AFTER an earthquake?
   _answers:
-  - _info: Batingaw
+  - _info: Stay updated through a battery-operated radio.
     _isCorrect: 1
-  - _info: Alerto Pinas
+  - _info: Cry in the corner.
     _isCorrect: 0
-  - _info: NDRRMC Alerts
+  - _info: Get current news from strangers
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

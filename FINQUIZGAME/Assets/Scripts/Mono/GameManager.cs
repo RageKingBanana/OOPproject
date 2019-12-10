@@ -33,7 +33,7 @@ public class GameManager : MonoBehaviour {
     {
         get
         {
-            int i;
+            int a;
             if (SceneManager.GetActiveScene().buildIndex == 1)
             { PlayerPrefs.SetInt("j", 5); }
             else if (SceneManager.GetActiveScene().buildIndex == 2)
@@ -44,8 +44,8 @@ public class GameManager : MonoBehaviour {
             { PlayerPrefs.SetInt("j", 15); }
             else if (SceneManager.GetActiveScene().buildIndex == 5)
             { PlayerPrefs.SetInt("j", 15); }
-            i = PlayerPrefs.GetInt("j");
-            return (FinishedQuestions.Count < i) ? false : true;
+            a = PlayerPrefs.GetInt("j");
+            return (FinishedQuestions.Count < a) ? false : true;
         }
     }
 

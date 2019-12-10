@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: Emergency kits should contain food in case of emergency, what is not needed?
+  _info: What should you do AFTER a flood?
   _answers:
-  - _info: Canned goods
+  - _info: "Simply don\u2019t care about your surroundings"
     _isCorrect: 0
-  - _info: Bottled Water
-    _isCorrect: 0
-  - _info: Freezed Ham
+  - _info: ' Use extreme caution when entering buildings.'
     _isCorrect: 1
+  - _info: Order a pizza.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

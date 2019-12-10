@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What are the possible effects of earthquakes?
+  _info: What should you do AFTER an earthquake?
   _answers:
-  - _info: Aftershocks
-    _isCorrect: 1
-  - _info: Tsunamis
-    _isCorrect: 1
-  - _info: Landslides
+  - _info: Cry in the corner.
+    _isCorrect: 0
+  - _info: Panic
+    _isCorrect: 0
+  - _info: Provide first aid for any possible injuries.
     _isCorrect: 1
   _useTimer: 0
   _timer: 0
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

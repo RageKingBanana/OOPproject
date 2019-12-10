@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: Emergency kits should contain all of the essential tools that is needed for
-    survival. What is not included?
+  _info: What should you do AFTER a flood?
   _answers:
-  - _info: Spare Batteries
+  - _info: Wait until it is safe to return.
     _isCorrect: 1
-  - _info: Comics
+  - _info: Return to your house immediately.
     _isCorrect: 0
-  - _info: Flashlight
-    _isCorrect: 1
+  - _info: Never return to your house.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

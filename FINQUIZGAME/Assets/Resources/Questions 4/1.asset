@@ -10,19 +10,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: 11
+  m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You are living across the river and the rain is pouring heavily. What should
-    you do?
+  _info: What are the possible effects of earthquakes?
   _answers:
-  - _info: Do not try to swim to cross the river.
+  - _info: Aftershocks
     _isCorrect: 1
-  - _info: Cross the river by swimming.
-    _isCorrect: 0
-  - _info: Accept your fate.
-    _isCorrect: 0
+  - _info: Tsunamis
+    _isCorrect: 1
+  - _info: Landslides
+    _isCorrect: 1
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

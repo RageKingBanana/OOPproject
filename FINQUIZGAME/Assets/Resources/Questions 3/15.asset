@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 15
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What is the necessary skill to be learned in case of emergency?
+  _info: What does PHILVOCS stands for?
   _answers:
-  - _info: Learn simple first aid techniques.
+  - _info: Philippine Intelligence of Volcanology and Seismology
+    _isCorrect: 0
+  - _info: Philippine Institution of Volcanology and Seismology
+    _isCorrect: 0
+  - _info: Philippine Institute of Volcanology and Seismology
     _isCorrect: 1
-  - _info: Learn self-defense.
-    _isCorrect: 0
-  - _info: Learn how to code.
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

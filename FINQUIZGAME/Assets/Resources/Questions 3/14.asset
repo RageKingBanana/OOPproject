@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 14
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What is the necessary skill to be learned in case of emergency?
+  _info: The local government agency that has been urging the public to be prepared
+    for earthquakes, considering that they are unpredictable and may strike anytime
+    is?
   _answers:
-  - _info: Learn simple first aid techniques.
+  - _info: PHILVOCS
     _isCorrect: 1
-  - _info: Learn self-defense.
+  - _info: PAG-ASA
     _isCorrect: 0
-  - _info: Learn how to code.
+  - _info: NDRRMC
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

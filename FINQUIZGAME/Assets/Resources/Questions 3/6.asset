@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: Why is the Philippines is considered to be an earthquake prone country?
+  _info: What should you do AFTER an earthquake?
   _answers:
-  - _info: The Philippines is an archipelago.
-    _isCorrect: 0
-  - _info: The Philippines is located near the Pacific Ring of Fire.
+  - _info: Message your loved ones of your state and where you are.
     _isCorrect: 1
-  - _info: The Philippines has so many mountains.
+  - _info: Play Mobile Legends
+    _isCorrect: 0
+  - _info: Do your project.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0
