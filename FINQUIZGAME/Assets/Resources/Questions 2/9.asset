@@ -15,7 +15,7 @@ MonoBehaviour:
   _infoImage: {fileID: 0}
   _info: What should you do DURING an earthquake?
   _answers:
-  - _info: What should you do DURING an earthquake?
+  - _info: Duck, cover and hold under somewhere stable
     _isCorrect: 1
   - _info: Run for the exits immediately.
     _isCorrect: 0
