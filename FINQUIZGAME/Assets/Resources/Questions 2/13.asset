@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: 13
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: The water is rapidly rising and your electrical connection is not elevated.
-    What should you do?
+  _info: "If you\u2019re in a moving vehicle, what should you do DURING an earthquake?"
   _answers:
-  - _info: Wait for the flooding to stop.
+  - _info: Ignore the earthquake and drive to your destination.
     _isCorrect: 0
-  - _info: Immediately shut off the electricity.
+  - _info: Step out and move towards a safer area.
     _isCorrect: 1
-  - _info: Take a selfie.
+  - _info: Pass through an overpass.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

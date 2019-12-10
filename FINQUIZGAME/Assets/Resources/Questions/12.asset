@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: 17
+  m_Name: 12
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: These are ways to prevent casualties during landslide except one. Which is
-    it?
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Checking maximum sustained winds
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: 'Engineering intervention and measures '
+  - _info: Learn self-defense.
     _isCorrect: 0
-  - _info: Hazard mapping
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

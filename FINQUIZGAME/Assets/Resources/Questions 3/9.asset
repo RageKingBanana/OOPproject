@@ -13,16 +13,14 @@ MonoBehaviour:
   m_Name: 9
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'What should you do AFTER a flood? '
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: 'Simply repair your house.
-
-'
-    _isCorrect: 0
-  - _info: Never your house.
-    _isCorrect: 0
-  - _info: Protect your property from future flood damage.
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

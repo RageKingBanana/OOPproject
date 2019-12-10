@@ -13,15 +13,13 @@ MonoBehaviour:
   m_Name: 19
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'What do you call the unsubstantiated theory about how to survive a major
-    earthquake wherein the theory advocates methods of protection very different from
-    "drop, cover, and hold on" ? '
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Parallelogram of Disaster
-    _isCorrect: 0
-  - _info: Triangle of Life
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Circle of Life
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What should you do DURING a flood?
   _answers:
-  - _info: Watch an NBA game.
-    _isCorrect: 0
-  - _info: Play a basketball game.
-    _isCorrect: 0
-  - _info: Participate in office and community earthquake drills.
+  - _info: Get to high ground.
     _isCorrect: 1
+  - _info: Stay indoors and wait for the flood to stop
+    _isCorrect: 0
+  - _info: Take a video and post it online.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

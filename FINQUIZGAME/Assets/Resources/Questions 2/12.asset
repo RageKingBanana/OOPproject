@@ -13,16 +13,15 @@ MonoBehaviour:
   m_Name: 12
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: There is a tropical depression near your area and has a chance to become
-    a super typhoon. What should you do?
+  _info: What should you do DURING an earthquake?
   _answers:
-  - _info: Be alert.
+  - _info: Evacuate to the nearest mall.
     _isCorrect: 0
-  - _info: Discuss a disaster plan with your family?
+  - _info: Evacuate to an open area.
     _isCorrect: 1
-  - _info: Prepare your emergency kit.
+  - _info: Evacuate to the nearest coffee shop.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

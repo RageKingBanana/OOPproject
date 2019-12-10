@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: A flash flood warning is issued in your area, what should you do BEFORE a
+    flood?
   _answers:
-  - _info: Do not do house repairs.
+  - _info: Stay at your house.
     _isCorrect: 0
-  - _info: Do not buy a house.
-    _isCorrect: 0
-  - _info: Have necessary house repairs fixed to avoid further damage.
+  - _info: Climb to safety immediately.
     _isCorrect: 1
+  - _info: Watch television all night.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

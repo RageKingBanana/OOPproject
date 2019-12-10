@@ -83,6 +83,7 @@ public class UIManager : MonoBehaviour {
 
     private             IEnumerator            IE_DisplayTimedResolution    = null;
     public int AnsQues;
+    public int i;
     private bool pressedinc = false;
 
     #endregion
@@ -167,7 +168,7 @@ public class UIManager : MonoBehaviour {
     void UpdateResUI(ResolutionScreenType type, int score)
     {
         var highscore = PlayerPrefs.GetInt(GameUtility.SavePrefKey);
-        int i;
+        
         AnsQues = PlayerPrefs.GetInt("QuesAns");
         i = AnsQues;
         if (SceneManager.GetActiveScene().buildIndex == 1)
@@ -299,6 +300,177 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.CorrectBGColor;
                     if (i == 0)
                     {
+                        uIElements.ResolutionStateInfoText.text = "Be alert. Being cautious about your surroundings can be prevent damage to your family and your property.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Immediately shut off the electricity. The risk of getting electrocuted is high so this is the top priority at the moment.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "All of the choices are correct.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Do not try to swim to cross the river. Instead you can find help to attach a rope to the other side of the river to cross safely.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Get your emergency kit and evacuate your house immediately.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Shut off the electricity at the circuit breakers. Water conducts electricity and loose electric connection can result in someone being electrocuted.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "NEVER try to walk or swim through flowing water. If the water is moving swiftly, water 6 inches deep can knock you off your feet.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately. Move to a safe area as soon as possible before access is cut off by rising water.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Get to high ground. Get out of low areas that may be subject to flooding,";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Discuss a disaster plan to your family. Discuss flood plans with your family. Decide where you will meet if separated.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Be prepared to evacuate. If you have a place you can stay, identify alternative routes that are not prone to flooding and immediately evacuate. If not, go to the designated evacuation assigned by the local government.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Assemble disaster supplies. Emergency Kits are a MUST and can comes very handy in emergency situations.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Climb to safety immediately. Flash floods develop quickly. Do not wait until you see rising water.";
+                        uIElements.ResolutionScoreText.text = "+" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Incorrect:
+                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
+                    if (i == 0)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Be alert. Being cautious about your surroundings can be prevent damage to your family and your property.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 14)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 13)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Immediately shut off the electricity. The risk of getting electrocuted is high so this is the top priority at the moment.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 12)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "All of the choices are correct.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 11)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Do not try to swim to cross the river. Instead you can find help to attach a rope to the other side of the river to cross safely.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 10)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Get your emergency kit and evacuate your house immediately.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 9)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 8)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Shut off the electricity at the circuit breakers. Water conducts electricity and loose electric connection can result in someone being electrocuted.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 7)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "NEVER try to walk or swim through flowing water. If the water is moving swiftly, water 6 inches deep can knock you off your feet.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 6)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately. Move to a safe area as soon as possible before access is cut off by rising water.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 5)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Get to high ground. Get out of low areas that may be subject to flooding,";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 4)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Discuss a disaster plan to your family. Discuss flood plans with your family. Decide where you will meet if separated.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 3)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Be prepared to evacuate. If you have a place you can stay, identify alternative routes that are not prone to flooding and immediately evacuate. If not, go to the designated evacuation assigned by the local government.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 2)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Assemble disaster supplies. Emergency Kits are a MUST and can comes very handy in emergency situations.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    else if (i == 1)
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Climb to safety immediately. Flash floods develop quickly. Do not wait until you see rising water.";
+                        uIElements.ResolutionScoreText.text = "-" + score;
+                    }
+                    break;
+                case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+
+                    StartCoroutine(CalculateScore());
+                    uIElements.FinishUIElements.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
+                    break;
+            }
+        }
+        else if (SceneManager.GetActiveScene().buildIndex == 3)
+        {
+            switch (type)
+            {
+                case ResolutionScreenType.Correct:
+                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
+                    if (i == 0)
+                    {
                         uIElements.ResolutionStateInfoText.text = "Familiarize yourself with all possible exit routes.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
@@ -309,7 +481,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (i == 13)
                     {
-                        uIElements.ResolutionStateInfoText.text = "B.	Step out and move towards a safer area.";
+                        uIElements.ResolutionStateInfoText.text = "Step out and move towards a safer area.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 12)
@@ -462,178 +634,7 @@ public class UIManager : MonoBehaviour {
                     break;
             }
         }
-        else if (SceneManager.GetActiveScene().buildIndex == 3)
-        {
-            switch (type)
-            {
-                case ResolutionScreenType.Correct:
-                    uIElements.ResolutionBG.color = parameters.CorrectBGColor;
-                    if (i == 0)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Be alert. Being cautious about your surroundings can be prevent damage to your family and your property.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 14)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "nine";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 13)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Immediately shut off the electricity. The risk of getting electrocuted is high so this is the top priority at the moment.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 12)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "All of the choices are correct.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 11)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Do not try to swim to cross the river. Instead you can find help to attach a rope to the other side of the river to cross safely.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 10)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Get your emergency kit and evacuate your house immediately.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 9)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 8)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Shut off the electricity at the circuit breakers. Water conducts electricity and loose electric connection can result in someone being electrocuted.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 7)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "NEVER try to walk or swim through flowing water. If the water is moving swiftly, water 6 inches deep can knock you off your feet.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 6)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately. Move to a safe area as soon as possible before access is cut off by rising water.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 5)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Get to high ground. Get out of low areas that may be subject to flooding,";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 4)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Discuss a disaster plan to your family. Discuss flood plans with your family. Decide where you will meet if separated.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 3)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Be prepared to evacuate. If you have a place you can stay, identify alternative routes that are not prone to flooding and immediately evacuate. If not, go to the designated evacuation assigned by the local government.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 2)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Assemble disaster supplies. Emergency Kits are a MUST and can comes very handy in emergency situations.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    else if (i == 1)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Climb to safety immediately. Flash floods develop quickly. Do not wait until you see rising water.";
-                        uIElements.ResolutionScoreText.text = "+" + score;
-                    }
-                    break;
-                case ResolutionScreenType.Incorrect:
-                    uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
-                    if (i == 0)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Be alert. Being cautious about your surroundings can be prevent damage to your family and your property.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 14)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "nine";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 13)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Immediately shut off the electricity. The risk of getting electrocuted is high so this is the top priority at the moment.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 12)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "All of the choices are correct.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 11)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Do not try to swim to cross the river. Instead you can find help to attach a rope to the other side of the river to cross safely.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 10)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Get your emergency kit and evacuate your house immediately.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 9)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 8)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Shut off the electricity at the circuit breakers. Water conducts electricity and loose electric connection can result in someone being electrocuted.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 7)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "NEVER try to walk or swim through flowing water. If the water is moving swiftly, water 6 inches deep can knock you off your feet.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 6)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately. Move to a safe area as soon as possible before access is cut off by rising water.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 5)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Get to high ground. Get out of low areas that may be subject to flooding,";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 4)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Discuss a disaster plan to your family. Discuss flood plans with your family. Decide where you will meet if separated.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 3)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Be prepared to evacuate. If you have a place you can stay, identify alternative routes that are not prone to flooding and immediately evacuate. If not, go to the designated evacuation assigned by the local government.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 2)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Assemble disaster supplies. Emergency Kits are a MUST and can comes very handy in emergency situations.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    else if (i == 1)
-                    {
-                        uIElements.ResolutionStateInfoText.text = "Climb to safety immediately. Flash floods develop quickly. Do not wait until you see rising water.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
-                    }
-                    break;
-                case ResolutionScreenType.Finish:
-                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
-
-                    StartCoroutine(CalculateScore());
-                    uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
-                    uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
-                    break;
-            }
-        }
-        if (SceneManager.GetActiveScene().buildIndex == 4)
+        else if (SceneManager.GetActiveScene().buildIndex == 4)
         {
             switch (type)
             {
@@ -854,7 +855,7 @@ public class UIManager : MonoBehaviour {
                     break;
             }
         }
-        if (SceneManager.GetActiveScene().buildIndex == 5)
+        else if (SceneManager.GetActiveScene().buildIndex == 5)
         {
             switch (type)
             {

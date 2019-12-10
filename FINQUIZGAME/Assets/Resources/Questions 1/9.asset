@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 9
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING an earthquake?
+  _info: You have a baby in your family and the local government issued a flood warning
+    in your area. What should you do?
   _answers:
-  - _info: Duck, cover and hold under somewhere stable.
+  - _info: "Put the baby\u2019s need and evacuate immediately."
     _isCorrect: 1
-  - _info: Run for the exits immediately.
+  - _info: Evacuate the area and leave the baby.
     _isCorrect: 0
-  - _info: "Simply don\u2019t care."
+  - _info: Ignore the local government.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

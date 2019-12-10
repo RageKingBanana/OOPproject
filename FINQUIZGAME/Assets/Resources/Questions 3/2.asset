@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: If you are living in the coastal area, what should you do AFTER an earthquake?
+  _info: What government agency is responsible for monitoring the weather changes
+    in the Philippines?
   _answers:
-  - _info: Evacuate immediately.
-    _isCorrect: 1
-  - _info: Go fishing.
+  - _info: DOST
     _isCorrect: 0
-  - _info: Watch the sunset.
+  - _info: PAG-ASA
+    _isCorrect: 1
+  - _info: PAG-IBIG
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

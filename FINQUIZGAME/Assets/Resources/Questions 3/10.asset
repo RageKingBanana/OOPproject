@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: 10
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You are living near the beach, then suddenly an earthquake hits. What you
-    should do?
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Go swimming.
-    _isCorrect: 0
-  - _info: Evacuate immediately.
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Go fishing.
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

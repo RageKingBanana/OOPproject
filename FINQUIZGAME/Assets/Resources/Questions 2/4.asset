@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE a flood?
+  _info: What should you do BEFORE an earthquake?
   _answers:
-  - _info: Tell a joke to your family
+  - _info: Use your emergency kit.
     _isCorrect: 0
-  - _info: Discuss a disaster plan to your family.
+  - _info: Prepare your emergency kit.
     _isCorrect: 1
-  - _info: Scare your kids.
+  - _info: Give away your emergency kit
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

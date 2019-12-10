@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE a flood?
+  _info: What should you do BEFORE an earthquake?
   _answers:
-  - _info: Host a party.
-    _isCorrect: 0
-  - _info: Play online games.
-    _isCorrect: 0
-  - _info: Assemble disaster supplies.
+  - _info: Store harmful chemicals and flammable materials properly.
     _isCorrect: 1
+  - _info: Let kids play harmful and flammable materials.
+    _isCorrect: 0
+  - _info: Let the harmful chemicals and flammable materials within reach of children
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

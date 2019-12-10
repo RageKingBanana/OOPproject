@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 'What government agency is responsible for mitigating disasters that arises
+    from geotectonic phenomena? '
   _answers:
-  - _info: Go to a coffee house.
+  - _info: DOST
     _isCorrect: 0
-  - _info: Go back inside the building.
+  - _info: NDRRMC
     _isCorrect: 0
-  - _info: Stay out of the buildings.
+  - _info: PHIVOLCS
     _isCorrect: 1
   _useTimer: 0
   _timer: 0

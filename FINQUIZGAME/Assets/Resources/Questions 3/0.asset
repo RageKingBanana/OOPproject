@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: What are the natural cause of earthquakes?
   _answers:
-  - _info: Take a selfie and post it on social media.
-    _isCorrect: 0
-  - _info: Stay alert in the event of aftershocks.
+  - _info: Sliding of tectonic plates
     _isCorrect: 1
-  - _info: Go back in the building immediately.
+  - _info: Volcanic activities
+    _isCorrect: 1
+  - _info: Global warming
     _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

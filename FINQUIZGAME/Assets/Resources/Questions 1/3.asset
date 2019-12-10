@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What should you do BEFORE a flood?
   _answers:
-  - _info: Elevate heavy furniture.
-    _isCorrect: 0
-  - _info: Secure heavy furniture and hanging objects.
+  - _info: Be prepared to evacuate.
     _isCorrect: 1
-  - _info: Destroy hanging objects.
+  - _info: Slack off
+    _isCorrect: 0
+  - _info: Evacuate when the water is already knee high
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What should you do BEFORE a flood?
   _answers:
-  - _info: Block all possible routes.
-    _isCorrect: 0
-  - _info: Familiarize yourself with all possible exit routes.
+  - _info: Be alert.
     _isCorrect: 1
-  - _info: Defend all possible routes.
+  - _info: Order a pizza.
+    _isCorrect: 0
+  - _info: Take a video and post it on social media.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

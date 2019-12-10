@@ -10,17 +10,17 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: 10
+  m_Name: 17
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What to do AFTER a flood?
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Ask your neighbor if it is safe to return.
-    _isCorrect: 0
-  - _info: Return to the flooded areas after the storm
-    _isCorrect: 0
-  - _info: Wait until the authorities indicate that it is safe to return.
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

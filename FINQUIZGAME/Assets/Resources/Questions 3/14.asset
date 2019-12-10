@@ -13,15 +13,13 @@ MonoBehaviour:
   m_Name: 14
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'The local government agency that has been urging the public to be prepared
-    for earthquakes, considering that they are unpredictable and may strike anytime
-    is? '
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: PHILVOCS
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: PAG-ASA
+  - _info: Learn self-defense.
     _isCorrect: 0
-  - _info: NDRRMC
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: 10
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You are sleeping and when you woke up the water is rapidly rising. What should
-    you do?
+  _info: What should you do DURING an earthquake?
   _answers:
-  - _info: Get back to sleep.
+  - _info: Cover beside the walls.
     _isCorrect: 0
-  - _info: Eat your breakfast first.
-    _isCorrect: 0
-  - _info: Get your emergency kit and evacuate your house immediately.
+  - _info: Stay away from glass windows, shelves, and heavy and hanging objects
     _isCorrect: 1
+  - _info: Panic and jump through the window.
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

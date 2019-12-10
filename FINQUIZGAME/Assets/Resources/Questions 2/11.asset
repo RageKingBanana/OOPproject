@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: 11
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You are living across the river and the rain is pouring heavily. What should
-    you do?
+  _info: What should you do DURING an earthquake?
   _answers:
-  - _info: Do not try to swim to cross the river.
+  - _info: Exit the building using the elevator.
+    _isCorrect: 0
+  - _info: Exit the building while walking casually,
+    _isCorrect: 0
+  - _info: Exit the building via stairs.
     _isCorrect: 1
-  - _info: Cross the river by swimming.
-    _isCorrect: 0
-  - _info: Accept your fate.
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

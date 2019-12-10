@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: 11
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You recently experienced an earthquake and are safe during the earthquake,
-    what you should do?
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Take a video and post it on social media.
-    _isCorrect: 0
-  - _info: Stay alert in the event of aftershocks.
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Celebrate.
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

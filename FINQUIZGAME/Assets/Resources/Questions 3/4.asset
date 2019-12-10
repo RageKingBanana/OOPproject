@@ -13,14 +13,15 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: What is the agency responsible for ensuring the protection and welfare of
+    the people?
   _answers:
-  - _info: Use the water in the building
+  - _info: Philippine Red Cross
     _isCorrect: 0
-  - _info: Use electrical components.
-    _isCorrect: 0
-  - _info: Check for water, electrical, gas, or LPG leaks and damages.
+  - _info: NDRRMC
     _isCorrect: 1
+  - _info: DOH
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

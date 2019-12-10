@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING an earthquake?
+  _info: What should you do DURING a flood?
   _answers:
-  - _info: Panic!
+  - _info: Watch Tulfo and chill.
     _isCorrect: 0
-  - _info: Stay calm and stay put.
+  - _info: Host a party.
+    _isCorrect: 0
+  - _info: Shut off the electricity at the circuit breakers.
     _isCorrect: 1
-  - _info: Punch the first man you see.
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

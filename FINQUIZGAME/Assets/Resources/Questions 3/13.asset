@@ -13,14 +13,13 @@ MonoBehaviour:
   m_Name: 13
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'You are recently a victim of a super typhoon. In the process your house
-    was recently destroyed by flash floods. What should you do? '
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Order a meal.
-    _isCorrect: 0
-  - _info: Elevate electrical components.
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Get your house blessed.
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

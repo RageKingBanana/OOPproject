@@ -33,7 +33,18 @@ public class GameManager : MonoBehaviour {
     {
         get
         {
-            int i = 5;
+            int i;
+            if (SceneManager.GetActiveScene().buildIndex == 1)
+            { PlayerPrefs.SetInt("j", 5); }
+            else if (SceneManager.GetActiveScene().buildIndex == 2)
+            { PlayerPrefs.SetInt("j", 10); }
+            else if (SceneManager.GetActiveScene().buildIndex == 3)
+            { PlayerPrefs.SetInt("j", 10); }
+            else if (SceneManager.GetActiveScene().buildIndex == 4)
+            { PlayerPrefs.SetInt("j", 15); }
+            else if (SceneManager.GetActiveScene().buildIndex == 5)
+            { PlayerPrefs.SetInt("j", 15); }
+            i = PlayerPrefs.GetInt("j");
             return (FinishedQuestions.Count < i) ? false : true;
         }
     }
@@ -287,8 +298,6 @@ public class GameManager : MonoBehaviour {
                 {
                     _questions[i] = (Question)objs[i];
                 }
-          
-
         }
         if (SceneManager.GetActiveScene().buildIndex == 2)
         {
@@ -396,6 +405,7 @@ public class GameManager : MonoBehaviour {
     int GetRandomQuestionIndex()
     {
         var random = 0;
+        PlayerPrefs.SetInt("QuesAns", 0);
         if (FinishedQuestions.Count < Questions.Length)
         {
             do

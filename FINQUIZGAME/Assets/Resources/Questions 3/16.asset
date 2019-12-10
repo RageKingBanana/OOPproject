@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 16
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'These are considered essential emergency kits except:'
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Essential tools
-    _isCorrect: 0
-  - _info: Hiking equipment
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Important documents
+  - _info: Learn self-defense.
+    _isCorrect: 0
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

@@ -10,17 +10,16 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: 8
+  m_Name: 11
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What is a tropical cyclone with maximum wind speed of 89 to 117 kph or 48
-    - 63 knots?
+  _info: What is the necessary skill to be learned in case of emergency?
   _answers:
-  - _info: Severe tropical storm
+  - _info: Learn simple first aid techniques.
     _isCorrect: 1
-  - _info: Tropical depression
+  - _info: Learn self-defense.
     _isCorrect: 0
-  - _info: Super typhoon
+  - _info: Learn how to code.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0
