@@ -641,102 +641,102 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.CorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 19)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Triangle of Life";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 18)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Stay calm and stay put.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 17)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Toiletries";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 16)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Hiking equipment";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 15)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Institute of Volcanology and Seismology";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 14)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "PHILVOCS";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 13)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Elevate electrical components, loose electrical cords might cause electrocution";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 12)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "provide first aid for the injured";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 11)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 10)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately, because it is most likely that a tsunami will hit.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "protect your property from future flood damage. Elevation of utilities and electrical components above the potential flood height as consideration of the elevation of the entire structure can be reduce the damage next time around";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Use extreme caution when entering buildings. Examine walls, floors, doors, windows, and ceilings for risk of collapsing.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Wait until it is safe to return. Do not return to flooded areas until the authorities indicate it is safe to do so.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "Message your loved ones of your state and where you are.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "Stay updated through a battery-operated radio.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "Check for water, electrical, gas, or LPG leaks and damages.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Stay out of buildings until advised.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "Evacuate to higher ground immediately.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Provide first aid for any possible injuries.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     break;
@@ -744,102 +744,102 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 19)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Triangle of Life";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 18)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Stay calm and stay put.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 17)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Toiletries";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 16)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Hiking equipment";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 15)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Philippine Institute of Volcanology and Seismology";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 14)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "PHILVOCS";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 13)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Elevate electrical components, loose electrical cords might cause electrocution";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 12)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "provide first aid for the injured";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 11)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 10)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately, because it is most likely that a tsunami will hit.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "protect your property from future flood damage. Elevation of utilities and electrical components above the potential flood height as consideration of the elevation of the entire structure can be reduce the damage next time around";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Use extreme caution when entering buildings. Examine walls, floors, doors, windows, and ceilings for risk of collapsing.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Wait until it is safe to return. Do not return to flooded areas until the authorities indicate it is safe to do so.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "Message your loved ones of your state and where you are.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "Stay updated through a battery-operated radio.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "Check for water, electrical, gas, or LPG leaks and damages.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Stay out of buildings until advised.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "Evacuate to higher ground immediately.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Provide first aid for any possible injuries.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     break;
@@ -862,102 +862,102 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.CorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "Landslide";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 19)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction & Management Council";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 18)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Early warning systems";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 17)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Checking maximum sustained winds";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 16)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Tell your neighbors that it is safe to return";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 15)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Squall";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 14)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Being cautious about your surroundings can  prevent damage to your family and your property.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 13)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Earth flow";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 12)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Storm surge";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 11)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Get to high ground.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 10)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Wait until the authorities indicate that it is safe to return.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Super typhoon";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Severe tropical storm";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Typhoon";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "Tropical storm";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "Tropical depression";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "Discuss an outing plan to your family.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Maximum sustained winds";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "PAG-ASA";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Hazard mapping";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     break;
@@ -965,102 +965,102 @@ public class UIManager : MonoBehaviour {
                     uIElements.ResolutionBG.color = parameters.IncorrectBGColor;
                     if (i == 0)
                     {
-                        uIElements.ResolutionStateInfoText.text = "zero";
+                        uIElements.ResolutionStateInfoText.text = "Landslide";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 19)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction & Management Council";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 18)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Early warning systems";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 17)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Checking maximum sustained winds";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 16)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Tell your neighbors that it is safe to return";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 15)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Squall";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 14)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Being cautious about your surroundings can  prevent damage to your family and your property.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 13)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Earth flow";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 12)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Storm surge";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 11)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Get to high ground.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 10)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Wait until the authorities indicate that it is safe to return.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 9)
                     {
-                        uIElements.ResolutionStateInfoText.text = "nine";
+                        uIElements.ResolutionStateInfoText.text = "Super typhoon";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 8)
                     {
-                        uIElements.ResolutionStateInfoText.text = "eight";
+                        uIElements.ResolutionStateInfoText.text = "Severe tropical storm";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 7)
                     {
-                        uIElements.ResolutionStateInfoText.text = "seven";
+                        uIElements.ResolutionStateInfoText.text = "Typhoon";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 6)
                     {
-                        uIElements.ResolutionStateInfoText.text = "six";
+                        uIElements.ResolutionStateInfoText.text = "Tropical storm";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 5)
                     {
-                        uIElements.ResolutionStateInfoText.text = "five";
+                        uIElements.ResolutionStateInfoText.text = "Tropical depression";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 4)
                     {
-                        uIElements.ResolutionStateInfoText.text = "four";
+                        uIElements.ResolutionStateInfoText.text = "Discuss an outing plan to your family.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 3)
                     {
-                        uIElements.ResolutionStateInfoText.text = "three";
+                        uIElements.ResolutionStateInfoText.text = "Maximum sustained winds";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 2)
                     {
-                        uIElements.ResolutionStateInfoText.text = "two";
+                        uIElements.ResolutionStateInfoText.text = "PAG-ASA";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (i == 1)
                     {
-                        uIElements.ResolutionStateInfoText.text = "one";
+                        uIElements.ResolutionStateInfoText.text = "Hazard mapping";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     break;

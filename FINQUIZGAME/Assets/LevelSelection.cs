@@ -54,7 +54,7 @@ public class LevelSelection : MonoBehaviour
         //compare = (Iskor + compare) * 0.50;
         for (int i = 0; i < levelUc.Length; i++)
 
-            if (Iskor > 39 && prevLevelPlayed == i)
+            if (Iskor > 9 && prevLevelPlayed == i)
                 levelUc[prevLevelPlayed] = '1';
 
         string str = new string(levelUc);
