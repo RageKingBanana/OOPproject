@@ -967,10 +967,10 @@ RectTransform:
   m_Father: {fileID: 1874400491}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0.5}
-  m_AnchorMax: {x: 1, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 254.99998}
-  m_SizeDelta: {x: 0, y: 570}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 125.500015}
+  m_SizeDelta: {x: 0, y: -251}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &190196031
 MonoBehaviour:
@@ -2955,6 +2955,8 @@ MonoBehaviour:
     incorrectBGColor: {r: 0.76470596, g: 0.15686275, b: 0.14901961, a: 1}
     finalBGColor: {r: 0.14901961, g: 0.5058824, b: 0.76470596, a: 1}
   AnsQues: 0
+  i: 0
+  questiooon: 
 --- !u!114 &849180835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3495,7 +3497,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1068334511
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3779,7 +3781,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -25, y: -57.6}
+  m_AnchoredPosition: {x: -59, y: -909}
   m_SizeDelta: {x: 111.8, y: 112.4}
   m_Pivot: {x: 1, y: 1}
 --- !u!114 &1127992080
@@ -4280,21 +4282,21 @@ MonoBehaviour:
   - name: CorrectSFX
     clip: {fileID: 8300000, guid: 4e7d2ed2bd3ce174aa8495737ade87dc, type: 3}
     parameters:
-      Volume: 0.4
+      Volume: 0
       Pitch: 1
       Loop: 0
     Source: {fileID: 0}
   - name: IncorrectSFX
     clip: {fileID: 8300000, guid: b2cde81c1526d304786f03e9cedb4604, type: 3}
     parameters:
-      Volume: 0.4
+      Volume: 0
       Pitch: 1
       Loop: 0
     Source: {fileID: 0}
   - name: CountdownSFX
     clip: {fileID: 8300000, guid: 20f8537e455b1a945a15ba1a454c7517, type: 3}
     parameters:
-      Volume: 1
+      Volume: 0
       Pitch: 0.85
       Loop: 0
     Source: {fileID: 0}
@@ -4561,7 +4563,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 1804973294}
   m_HandleRect: {fileID: 1546102099}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -42.09542
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -5577,7 +5579,7 @@ MonoBehaviour:
   m_FillRect: {fileID: 995160154}
   m_HandleRect: {fileID: 883254153}
   m_Direction: 0
-  m_MinValue: -80
+  m_MinValue: -42.09542
   m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 0
@@ -6450,11 +6452,11 @@ AudioSource:
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: -5035662503097337924, guid: 6efa1c3dc5b623e4d8bee22c8dc83cb8,
     type: 2}
-  m_audioClip: {fileID: 8300000, guid: 311641cab92fb5846bb970e28775ea7c, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 907cce08650a5ca4eaa917a8c749ea3b, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

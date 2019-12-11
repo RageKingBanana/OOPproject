@@ -192,7 +192,7 @@ public class UIManager : MonoBehaviour {
                         uIElements.ResolutionStateInfoText.text = "Freezed Ham is not included because it is needed to be processed first in order to eat it.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     } 
-                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival.What is included ?")
+                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival. What is not included?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Spare Batteries and Flashlight are included in the emergency kit.";
                         uIElements.ResolutionScoreText.text = "+" + score;
@@ -241,12 +241,12 @@ public class UIManager : MonoBehaviour {
                         uIElements.ResolutionStateInfoText.text = "Learning simple first aid techniques can be very advantageous. ";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
-                    else if (questiooon == "Emergency kits should contain food in case of emergency, what is not needed ?")
+                    else if (questiooon == "Emergency kits should contain food in case of emergency, what is not needed?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Freezed Ham is not included because it is needed to be processed first in order to eat it.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
-                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival.What is included ?")
+                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival. What is not included?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Spare Batteries and Flashlight are included in the emergency kit.";
                         uIElements.ResolutionScoreText.text = "-" + score;
@@ -283,6 +283,7 @@ public class UIManager : MonoBehaviour {
                     }
                     break;
                 case ResolutionScreenType.Finish:
+                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
                     if (questiooon == "What are the natural cause of earthquakes?")
                     {
                         uIElements.ResolutionStateInfoText.text = "The natural causes of earthquakes are sliding of tectonic plates and volcanic activities.";
@@ -291,12 +292,11 @@ public class UIManager : MonoBehaviour {
                     {
                         uIElements.ResolutionStateInfoText.text = "Learning simple first aid techniques can be very advantageous. ";
                     }
-                    else if (questiooon == "Emergency kits should contain food in case of emergency, what is not needed ?")
+                    else if (questiooon == "Emergency kits should contain food in case of emergency, what is not needed?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Freezed Ham is not included because it is needed to be processed first in order to eat it.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
-                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival.What is included ?")
+                    else if (questiooon == "Emergency kits should contain all of the essential tools that is needed for survival. What is not included?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Spare Batteries and Flashlight are included in the emergency kit.";
                     }
@@ -325,11 +325,11 @@ public class UIManager : MonoBehaviour {
                         uIElements.ResolutionStateInfoText.text = "Aftershocks, Tsunamis, Landslides are all possible effects of earthquakes.";
                     }
 
-                    uIElements.ResolutionBG.color = parameters.FinalBGColor;
+                    
 
                     StartCoroutine(CalculateScore());
                     uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(false);
                     uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                     break;
             }
@@ -499,84 +499,69 @@ public class UIManager : MonoBehaviour {
                     if (questiooon == "You are currently celebrating your birthday when you found out that the water in your area is rapidly rising. What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Be alert. Being cautious about your surroundings can be prevent damage to your family and your property.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "A person can get this disease through a mosquito bite causing a flu-like illness and sometimes lethal complications.")
                     {
                         uIElements.ResolutionStateInfoText.text = "Dengue";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "A person can get this disease by consuming contaminated food or water.")
                     {
                         uIElements.ResolutionStateInfoText.text = "Cholera";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "A person can get this disease simply by wading or swimming in floods contaminated with animal urine? ")
                     {
                         uIElements.ResolutionStateInfoText.text = "Leptospirosis is spread mainly by contact upon water or soil contaminated by the urine of infected animals.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "According to waze, what are the top three cities  in metro manila are considered to be the most flood prone areas?")
                     {
                         uIElements.ResolutionStateInfoText.text = "According to waze, Manila is considered to be the most flood prone area in metro manila followed by Makati and Mandaluyong.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "What are the alternative solution/s to reduce flood damage?")
                     {
                         uIElements.ResolutionStateInfoText.text = "All, The more trees there are, the slower the water flow = less damage, Proper waste management helps in avoiding blocked irrigation systems and Investing in flood defences helps prepare for future damage control";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "If a family who's always suffer from floods, had a newborn baby recently. What should they do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.Put the baby’s need and evacuate immediately. Safety is always the first priority in emergencies.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "A family is currently living in a household located in a low ground location. The area is currently suffering the onslaught of a super typhoon. The flood started to fill the premises. There are extension cords that are just laying on the ground ? What is the danger that the family may suffer?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Shut off the electricity at the circuit breakers. Water conducts electricity and loose electric connection can result in someone being electrocuted.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "A family of illegal settlers dwells near an estero. An unexpected rise of water level woke them up. What they should not do is ?")
                     {
                         uIElements.ResolutionStateInfoText.text = "NEVER try to walk or swim through flowing water. If the water is moving swiftly, water 6 inches deep can knock you off your feet.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "You woke up early in the morning and you notice that the water is starting to rise. The local government failed to inform the citizens about the flood.  What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Evacuate immediately. Move to a safe area as soon as possible before access is cut off by rising water.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "You own a farm and a waist deep flood is currently devastating your farm. You should not?")
                     {
                         uIElements.ResolutionStateInfoText.text = "You should not prioritze to save crops and animals. Get out of low areas that may be subject to flooding,prioritze your safety above all else";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "You saw in a documentary the danger of flash floods. The local government warns every Filipino family regarding this issue. What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Discuss a disaster plan to your family. Discuss flood plans with your family. Decide where you will meet if separated.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "The rain is falling so hard due to the super typhoon in your area. There is a chance of flash floods. What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Be prepared to evacuate. If you have a place you can stay, identify alternative routes that are not prone to flooding and immediately evacuate. If not, go to the designated evacuation assigned by the local government.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "You recently attended a seminar about survival tips conducted by your barangay. What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Assemble disaster supplies. Emergency Kits are a MUST and can comes very handy in emergency situations.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "You are currently residing in Brgy. Tomana in Marikina. You heard that the current water level in Marikina river has the potential to reach it’s critical level. What should you do?")
                     {
                         uIElements.ResolutionStateInfoText.text = "Climb to safety immediately. Flash floods develop quickly. Do not wait until you see rising water.";
-                        uIElements.ResolutionScoreText.text = "-" + score;
                     }
 
                     //uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
 
                     StartCoroutine(CalculateScore());
                     uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(false);
                     uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                     break;
             }
@@ -733,11 +718,66 @@ public class UIManager : MonoBehaviour {
                     break;
                 case ResolutionScreenType.Finish:
                     uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+                    if (questiooon == "The local government warns the public about the possibility of an earthquake. What should you do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Familiarize yourself with all possible exit routes.";
+                    }
+                    else if (questiooon == "You and your family are driving for your vacation when suddenly an earthquake hits.What should you do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Step out and move towards a safer area.";
+                    }
+                    else if (questiooon == "An earthquake suddenly hits and you are able to exit the building safely. Once you are outside of the building, What you should do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Evacuate to an open area.You should always be on the lookout for any structures that might collapse.";
+                    }
+                    else if (questiooon == "While running towards the exit during an earthquake. You should avoid?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "During an earthquake, avoid using electricity powered machines like elevators and escalators.";
+                    }
+                    else if (questiooon == "You and your family are shopping in a mall when an earthquake suddenly hits. You did the duck, cover and hold and are ready to exit the building. What should you look out for?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "All of the above, Stay away from glass windows, shelves, hanging objects or any sharp or heavy objects that can cause severe injuries.";
+                    }
+                    else if (questiooon == "What is the most important thing to do during an earthquake?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = " Although all of the choices are all important, doing the duck, cover and hold can save someone’s life from collapsing debris.";
+                    }
+                    else if (questiooon == "You were in a public mall when an earthquake suddenly hits. What should you do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "A person should stay calm first in order not to spread panic to others";
+                    }
+                    else if (questiooon == "This is the most active volcano in asia. ")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "According to Forbes, Mount Agung is considered to be the most dangerous volcano in asia.";
+                    }
+                    else if (questiooon == "What country has experienced the strongest earthquake that the world has seen.")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "“The Great Chilean Earthquake” is the world’s strongest earthquake with a magnitude of 9.5 in 1960.";
+                    }
+                    else if (questiooon == "What can the local baranggay do to help prepare their subjects for a possible earthquake?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills.";
+                    }
+                    else if (questiooon == "What country has the most earthquakes?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Indonesia";
+                    }
+                    else if (questiooon == "The local government recently warned about the possibility of an earthquake. You try to decide what to do to your furniture.")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Secure heavy furniture and hanging objects.";
+                    }
+                    else if (questiooon == "You own a store that sells different kinds of chemicals. In part with earthquake safety, what should you do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Store harmful chemicals and flammable materials properly.";
+                    }
+                    else if (questiooon == "You noticed that your friend’s house is not in a very good condition. The Phivolcs recently warned the public about the possibility of an earthquake. What should you do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Point out the current condition of the house and advice them for repairs.";
+                    }
 
                     StartCoroutine(CalculateScore());
                     uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(false);
                     uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                     break;
             }
@@ -755,12 +795,13 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (questiooon == "What do you call the unsubstantiated theory about how to survive a major earthquake wherein the theory advocates methods of protection very different from ''drop, cover, and hold on'' ? ")
                     {
+                        
                         uIElements.ResolutionStateInfoText.text = "Triangle of Life";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (questiooon == "What to do DURING earthquakes?")
                     {
-                        uIElements.ResolutionStateInfoText.text = "Stay calm and stay put.";
+                        uIElements.ResolutionStateInfoText.text = "Duck, cover and hold under somewhere stable.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (questiooon == "What do you call a kit that includes bath soap, toothbrush, toothpaste and sanitary pads?")
@@ -954,11 +995,90 @@ public class UIManager : MonoBehaviour {
                     break;
                 case ResolutionScreenType.Finish:
                     uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+                    if (questiooon == "What should you do AFTER an earthquake?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
+                    }
+                    else if (questiooon == "What do you call the unsubstantiated theory about how to survive a major earthquake wherein the theory advocates methods of protection very different from ''drop, cover, and hold on'' ? ")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Triangle of Life";
+                    }
+                    else if (questiooon == "What to do DURING earthquakes?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Stay calm and stay put.";
+                    }
+                    else if (questiooon == "What do you call a kit that includes bath soap, toothbrush, toothpaste and sanitary pads?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Toiletries";
+                    }
+                    else if (questiooon == "These are considered essential emergency kits except:")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Hiking equipment";
+                    }
+                    else if (questiooon == "What does PHILVOCS stands for?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Philippine Institute of Volcanology and Seismology";
+                    }
+                    else if (questiooon == "The local government agency that has been urging the public to be prepared for earthquakes, considering that they are unpredictable and may strike anytime is?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "PHILVOCS";
+                    }
+                    else if (questiooon == "You are recently a victim of a super typhoon. In the process your house was recently destroyed by flash floods. What should you do? ")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Elevate electrical components, loose electrical cords might cause electrocution";
+                    }
+                    else if (questiooon == " An earthquake just recently hit and there so many injured what should you do? ")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "provide first aid for the injured";
+                    }
+                    else if (questiooon == "You recently experienced an earthquake and are safe during the earthquake, what you should do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Stay alert in the event of aftershocks.";
+                    }
+                    else if (questiooon == "You are living near the beach, then suddenly an earthquake hits. What you should do?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Evacuate immediately, because it is most likely that a tsunami will hit.";
+                    }
+                    else if (questiooon == "2-What should you do AFTER a flood?")//9
+                    {
+                        uIElements.ResolutionStateInfoText.text = "protect your property from future flood damage. Elevation of utilities and electrical components above the potential flood height as consideration of the elevation of the entire structure can be reduce the damage next time around";
+                    }
+                    else if (questiooon == "1-What should you do AFTER a flood?")//8
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Use extreme caution when entering buildings. Examine walls, floors, doors, windows, and ceilings for risk of collapsing.";
+                    }
+                    else if (questiooon == "What should you do AFTER a flood?")//7
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Wait until it is safe to return. Do not return to flooded areas until the authorities indicate it is safe to do so.";
+                    }
+                    else if (questiooon == "5-What should you do AFTER an earthquake?")//6
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Message your loved ones of your state and where you are.";
+                    }
+                    else if (questiooon == "4-What should you do AFTER an earthquake?")//5
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Stay updated through a battery-operated radio.";
+                    }
+                    else if (questiooon == "3-What should you do AFTER an earthquake?")//4
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Check for water, electrical, gas, or LPG leaks and damages.";
+                    }
+                    else if (questiooon == "2-What should you do AFTER an earthquake?")//3
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Stay out of buildings until advised.";
+                    }
+                    else if (questiooon == "If you are living in the coastal area, what should you do AFTER an earthquake?")//2
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Evacuate to higher ground immediately.";
+                    }
+                    else if (questiooon == "1-What should you do AFTER an earthquake?")//1
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Provide first aid for any possible injuries.";
+                    }
 
                     StartCoroutine(CalculateScore());
                     uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(false);
                     uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                     break;
             }
@@ -1175,11 +1295,90 @@ public class UIManager : MonoBehaviour {
                     break;
                 case ResolutionScreenType.Finish:
                     uIElements.ResolutionBG.color = parameters.FinalBGColor;
-                    uIElements.ResolutionStateInfoText.text = "FINAL SCORE";
+                    if (questiooon == "What refers to several forms of mass wasting that include a wide range of ground movements, such as rock falls, deep-seated slope failures, mud flows, and debris flows?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Landslide";
+                    }
+                    else if (questiooon == "NDRRMC stands for:")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "National Disaster Risk Reduction & Management Council";
+                    }
+                    else if (questiooon == "It is a way wherein local government agencies provide safety warnings through television broadcasting, text messages alerts, and social media. What is it?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Early warning systems";
+                    }
+                    else if (questiooon == "These are ways to prevent casualties during landslide except one. Which is it?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Checking maximum sustained winds";
+                    }
+                    else if (questiooon == "All of these are important things to do AFTER a flood except one:")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Tell your neighbors that it is safe to return";
+                    }
+                    else if (questiooon == "It is an event in which the surface wind increases in magnitude above the mean by factors of 1.2 to 1.6 or higher")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Squall";
+                    }
+                    else if (questiooon == "What to do BEFORE a flood?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Being cautious about your surroundings can  prevent damage to your family and your property.";
+                    }
+                    else if (questiooon == "What is a downslope viscous flow of fine-grained materials that have been saturated with water and moves under the pull of gravity?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Earth flow";
+                    }
+                    else if (questiooon == "What do you call the oceanic event incorporated with abnormal rise of water due to a tropical cyclone?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Storm surge";
+                    }
+                    else if (questiooon == "What to do DURING a flood?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Get to high ground.";
+                    }
+                    else if (questiooon == "What to do AFTER a flood?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Wait until the authorities indicate that it is safe to return.";
+                    }
+                    else if (questiooon == "What is a tropical cyclone with maximum wind speed exceeding 220 kph or more than 120 knots?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Super typhoon";
+                    }
+                    else if (questiooon == "What is a tropical cyclone with maximum wind speed of 89 to 117 kph or 48 - 63 knots?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Severe tropical storm";
+                    }
+                    else if (questiooon == "What is a tropical cyclone with maximum wind speed of 118 to 220 kph or 64 - 120 knots?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Typhoon";
+                    }
+                    else if (questiooon == "What do you call a tropical cyclone with maximum wind speed of 62 to 88 kph or 34 - 47 knots?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Tropical storm";
+                    }
+                    else if (questiooon == "What do you call a tropical cyclone with maximum sustained winds of up to 61 kilometers per hour (kph) or less than 33 nautical miles per hour (knots)?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Tropical depression";
+                    }
+                    else if (questiooon == "These are some ways to do BEFORE a flood except one. What is it?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Discuss an outing plan to your family.";
+                    }
+                    else if (questiooon == "Each typhoon classification are based on what reference?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Maximum sustained winds";
+                    }
+                    else if (questiooon == "What is the local government agency that provides safety warnings through television broadcasting regarding typhoons and floods?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "PAG-ASA";
+                    }
+                    else if (questiooon == "What do you call the way of highlighting areas that were affected by or vulnerable to a particular hazard?")
+                    {
+                        uIElements.ResolutionStateInfoText.text = "Hazard mapping";
+                    }
 
                     StartCoroutine(CalculateScore());
                     uIElements.FinishUIElements.gameObject.SetActive(true);
-                    uIElements.HighScoreText.gameObject.SetActive(true);
+                    uIElements.HighScoreText.gameObject.SetActive(false);
                     uIElements.HighScoreText.text = ((highscore > events.StartupHighscore) ? "<color=yellow>new </color>" : string.Empty) + "Highscore: " + highscore;
                     break;
             }

@@ -15,7 +15,7 @@ MonoBehaviour:
   _infoImage: {fileID: 0}
   _info: 'What do you call the unsubstantiated theory about how to survive a major
     earthquake wherein the theory advocates methods of protection very different from
-    "drop, cover, and hold on" ? '
+    ''''drop, cover, and hold on'''' ? '
   _answers:
   - _info: Parallelogram of Disaster
     _isCorrect: 0

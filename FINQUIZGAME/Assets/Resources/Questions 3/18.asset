@@ -18,9 +18,9 @@ MonoBehaviour:
   - _info: Shout and run.
     _isCorrect: 0
   - _info: Stay calm and stay put.
-    _isCorrect: 1
-  - _info: Duck, cover and hold under somewhere stable
     _isCorrect: 0
+  - _info: Duck, cover and hold under somewhere stable
+    _isCorrect: 1
   _useTimer: 0
   _timer: 0
   _answerType: 1
