@@ -13,15 +13,15 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What government agency is responsible for monitoring the weather changes
-    in the Philippines?
+  _info: What is the local government agency that provides safety warnings through
+    television broadcasting regarding typhoons and floods?
   _answers:
-  - _info: DOST
+  - _info: NDRRMC
     _isCorrect: 0
-  - _info: PAG-ASA
+  - _info: PHILVOCS
+    _isCorrect: 0
+  - _info: "PAG-ASA\r\n"
     _isCorrect: 1
-  - _info: PAG-IBIG
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

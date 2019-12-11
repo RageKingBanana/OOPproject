@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'What government agency is responsible for mitigating disasters that arises
-    from geotectonic phenomena? '
+  _info: Each typhoon classification are based on what reference?
   _answers:
-  - _info: DOST
-    _isCorrect: 0
-  - _info: NDRRMC
-    _isCorrect: 0
-  - _info: PHIVOLCS
+  - _info: Maximum sustained winds
     _isCorrect: 1
+  - _info: Potentially disastrous phenomenon
+    _isCorrect: 0
+  - _info: possible flood level
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

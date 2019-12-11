@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING a flood?
+  _info: You woke up early in the morning and you notice that the water is starting
+    to rise. The local government failed to inform the citizens about the flood.  What
+    should you do?
   _answers:
-  - _info: Evacuate immediately.
+  - _info: Find a place you can go to immediately.
     _isCorrect: 1
-  - _info: Wait for the authorities go signal before evacuating
+  - _info: Wait for the authorities go signal before evacuating.
     _isCorrect: 0
-  - _info: Wait for the flood the stop.
+  - _info: Go back to sleep.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

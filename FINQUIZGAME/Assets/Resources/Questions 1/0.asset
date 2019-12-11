@@ -13,11 +13,12 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE a flood?
+  _info: You are currently celebrating your birthday when you found out that the water
+    in your area is rapidly rising. What should you do?
   _answers:
   - _info: Be alert.
     _isCorrect: 1
-  - _info: Order a pizza.
+  - _info: Order more food.
     _isCorrect: 0
   - _info: Take a video and post it on social media.
     _isCorrect: 0

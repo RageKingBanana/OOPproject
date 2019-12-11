@@ -13,15 +13,14 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What is the agency responsible for ensuring the protection and welfare of
-    the people?
+  _info: These are some ways to do BEFORE a flood except one. What is it?
   _answers:
-  - _info: Philippine Red Cross
+  - _info: Assemble disaster supplies.
     _isCorrect: 0
-  - _info: NDRRMC
+  - _info: Be prepared to evacuate.
+    _isCorrect: 0
+  - _info: Discuss an outing plan to your family.
     _isCorrect: 1
-  - _info: DOH
-    _isCorrect: 0
   _useTimer: 0
   _timer: 0
   _answerType: 1

@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE a flood?
+  _info: The rain is falling so hard due to the super typhoon in your area. There
+    is a chance of flash floods. What should you do?
   _answers:
   - _info: Be prepared to evacuate.
     _isCorrect: 1

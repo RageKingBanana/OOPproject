@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: 9
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: You have a baby in your family and the local government issued a flood warning
-    in your area. What should you do?
+  _info: If a family who's always suffer from floods, had a newborn baby recently.
+    What should they do?
   _answers:
-  - _info: "Put the baby\u2019s need and evacuate immediately."
+  - _info: Add the necessary items for the baby in the emergency kit.
     _isCorrect: 1
-  - _info: Evacuate the area and leave the baby.
+  - _info: Hire a babysitter incase of emergency.
     _isCorrect: 0
-  - _info: Ignore the local government.
-    _isCorrect: 0
+  - _info: Devise an emergency plan.
+    _isCorrect: 1
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

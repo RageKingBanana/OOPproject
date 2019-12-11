@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING an earthquake?
+  _info: You were in a public mall when an earthquake suddenly hits. What should you
+    do?
   _answers:
   - _info: Panic!
     _isCorrect: 0
   - _info: Stay calm and stay put.
     _isCorrect: 1
-  - _info: Punch the first man you see.
+  - _info: Run for the nearest exit immediately.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

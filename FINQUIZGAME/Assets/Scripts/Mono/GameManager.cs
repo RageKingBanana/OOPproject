@@ -29,7 +29,6 @@ public class GameManager : MonoBehaviour {
     private             IEnumerator         IE_WaitTillNextRound    = null;
     private             IEnumerator         IE_StartTimer           = null;
     private bool pressedinc = false;
-    private bool finished = false;
     private             bool                IsFinished
     {
         get
@@ -161,7 +160,6 @@ public class GameManager : MonoBehaviour {
     {
         UpdateTimer(false);
         bool isCorrect = CheckAnswers();
-
         FinishedQuestions.Add(currentQuestion);
         pressedinc = false;
 
@@ -172,33 +170,18 @@ public class GameManager : MonoBehaviour {
             SetHighscore();
         }
 
-        var type
-            = (IsFinished)
-            ? UIManager.ResolutionScreenType.Finish
-            : (isCorrect) ? UIManager.ResolutionScreenType.Correct
+        var type 
+            = (IsFinished) 
+            ? UIManager.ResolutionScreenType.Finish 
+            : (isCorrect) ? UIManager.ResolutionScreenType.Correct 
             : UIManager.ResolutionScreenType.Incorrect;
-        AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
 
-        if (finished)
-            events.DisplayResolutionScreen(UIManager.ResolutionScreenType.Finish, Questions[currentQuestion].AddScore);
-
-        if (IsFinished)
-        {
-            print("FINISH");
-            if (isCorrect)
-                events.DisplayResolutionScreen(UIManager.ResolutionScreenType.Correct, Questions[currentQuestion].AddScore);
-            if (!isCorrect)
-                events.DisplayResolutionScreen(UIManager.ResolutionScreenType.Incorrect, Questions[currentQuestion].AddScore);
-            finished = true;
-        }
-        else
+        if (events.DisplayResolutionScreen != null)
         {
             events.DisplayResolutionScreen(type, Questions[currentQuestion].AddScore);
         }
-        if (events.DisplayResolutionScreen != null)
-        {
-            // events.DisplayResolutionScreen(type, Questions[currentQuestion].AddScore);
-        }
+
+        AudioManager.Instance.PlaySound((isCorrect) ? "CorrectSFX" : "IncorrectSFX");
 
         if (type != UIManager.ResolutionScreenType.Finish)
         {

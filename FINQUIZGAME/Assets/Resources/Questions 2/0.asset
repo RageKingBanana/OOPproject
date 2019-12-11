@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 'What should you do BEFORE earthquake? '
+  _info: The local government warns the public about the possibility of an earthquake.
+    What should you do?
   _answers:
   - _info: Block all possible routes.
     _isCorrect: 0

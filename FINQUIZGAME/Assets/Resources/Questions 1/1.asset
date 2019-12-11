@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: A flash flood warning is issued in your area, what should you do BEFORE a
-    flood?
+  _info: "You are currently residing in Brgy. Tomana in Marikina. You heard that the
+    current water level in Marikina river has the potential to reach it\u2019s critical
+    level. What should you do?"
   _answers:
   - _info: Stay at your house.
     _isCorrect: 0

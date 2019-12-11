@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: The local government recently warned about the possibility of an earthquake.
+    You try to decide what to do to your furniture.
   _answers:
   - _info: Elevate heavy furniture.
     _isCorrect: 0

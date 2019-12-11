@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING a flood?
+  _info: A family of illegal settlers dwells near an estero. An unexpected rise of
+    water level woke them up. What they should not do is ?
   _answers:
-  - _info: Try to cross the flood.
+  - _info: Get help from others.
     _isCorrect: 0
-  - _info: Never try to walk or swim through flowing water
+  - _info: Try to walk or swim through flowing water.
     _isCorrect: 1
-  - _info: Rescue your valuables.
+  - _info: Rescue their valuables.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

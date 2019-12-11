@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE a flood?
+  _info: You saw in a documentary the danger of flash floods. The local government
+    warns every Filipino family regarding this issue. What should you do?
   _answers:
-  - _info: Tell a joke to your family.
+  - _info: Curse the government.
     _isCorrect: 0
   - _info: Discuss a disaster plan with your family.
     _isCorrect: 1

@@ -13,14 +13,14 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What country has experienced the strongest earthquake that the world has
+    seen.
   _answers:
-  - _info: Discuss a movie ending with your family.
+  - _info: Japan
     _isCorrect: 0
-  - _info: "Discuss a designated meet up location with family in case you\u2019re
-      separated."
+  - _info: Chile
     _isCorrect: 1
-  - _info: Discuss the end of the world.
+  - _info: Haiti
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

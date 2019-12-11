@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What can the local baranggay do to help prepare their subjects for a possible
+    earthquake?
   _answers:
-  - _info: Watch an NBA game.
+  - _info: ' Provide emergency kits.'
+    _isCorrect: 1
+  - _info: Conduct a free medical missions.
     _isCorrect: 0
-  - _info: Play a basketball game.
-    _isCorrect: 0
-  - _info: Participate in office and community earthquake drills.
+  - _info: Provide a community earthquake drills.
     _isCorrect: 1
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10

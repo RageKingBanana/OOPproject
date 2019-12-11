@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 2
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: You own a store that sells different kinds of chemicals. In part with earthquake
+    safety, what should you do?
   _answers:
   - _info: Store harmful chemicals and flammable materials properly.
     _isCorrect: 1

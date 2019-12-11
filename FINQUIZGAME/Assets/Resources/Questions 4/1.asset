@@ -13,15 +13,16 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What are the possible effects of earthquakes?
+  _info: What do you call the way of highlighting areas that were affected by or vulnerable
+    to a particular hazard?
   _answers:
-  - _info: Aftershocks
+  - _info: Hazard mapping
     _isCorrect: 1
-  - _info: Tsunamis
-    _isCorrect: 1
-  - _info: Landslides
-    _isCorrect: 1
+  - _info: Early Warning Systems
+    _isCorrect: 0
+  - _info: Public information
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

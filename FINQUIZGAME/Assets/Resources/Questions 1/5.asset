@@ -13,13 +13,14 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING a flood?
+  _info: You own a farm and a waist deep flood is currently devastating your farm.
+    You should not?
   _answers:
-  - _info: Get to high ground.
-    _isCorrect: 1
-  - _info: Stay indoors and wait for the flood to stop
+  - _info: Evacuate to a higher ground.
     _isCorrect: 0
-  - _info: Take a video and post it online.
+  - _info: Try to save crops and animals.
+    _isCorrect: 1
+  - _info: Try to get help if trapped.
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

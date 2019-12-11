@@ -13,13 +13,15 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE earthquake?
+  _info: "You noticed that your friend\u2019s house is not in a very good condition.
+    The Phivolcs recently warned the public about the possibility of an earthquake.
+    What should you do?"
   _answers:
-  - _info: Do not do house repairs.
+  - _info: "Let your friend to notice the house\u2019s condition"
     _isCorrect: 0
-  - _info: Do not buy a house.
+  - _info: Tease them that they can just die along with the house.
     _isCorrect: 0
-  - _info: Have necessary house repairs fixed to avoid further damage.
+  - _info: Point out the current condition of the house and advice them for repairs.
     _isCorrect: 1
   _useTimer: 0
   _timer: 0

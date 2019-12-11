@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 7
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: 'This is the most active volcano in asia. '
   _answers:
-  - _info: Learn origami.
+  - _info: Mayon Volcano (Philippines)
     _isCorrect: 0
-  - _info: Learn how to speak in Spanish.
+  - _info: Mount Merapi (Indonesia)
     _isCorrect: 0
-  - _info: Learn simple first aid techniques.
+  - _info: Mount Agung (Indonesia)
     _isCorrect: 1
   _useTimer: 0
   _timer: 0

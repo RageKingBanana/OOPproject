@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 1
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 1-What should you do AFTER an earthquake?
   _answers:
   - _info: Cry in the corner.
     _isCorrect: 0

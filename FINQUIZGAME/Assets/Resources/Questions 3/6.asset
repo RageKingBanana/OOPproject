@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 6
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 5-What should you do AFTER an earthquake?
   _answers:
   - _info: Message your loved ones of your state and where you are.
     _isCorrect: 1

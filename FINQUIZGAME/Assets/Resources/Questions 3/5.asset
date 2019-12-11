@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 5
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 4-What should you do AFTER an earthquake?
   _answers:
   - _info: Stay updated through a battery-operated radio.
     _isCorrect: 1

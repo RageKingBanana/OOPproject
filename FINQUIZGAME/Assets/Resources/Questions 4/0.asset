@@ -13,15 +13,17 @@ MonoBehaviour:
   m_Name: 0
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What are the natural cause of earthquakes?
+  _info: What refers to several forms of mass wasting that include a wide range of
+    ground movements, such as rock falls, deep-seated slope failures, mud flows, and
+    debris flows?
   _answers:
-  - _info: Sliding of tectonic plates
+  - _info: Earthquake
+    _isCorrect: 0
+  - _info: Landslide
     _isCorrect: 1
-  - _info: Volcanic activities
-    _isCorrect: 1
-  - _info: Global warming
+  - _info: Tsunami
     _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

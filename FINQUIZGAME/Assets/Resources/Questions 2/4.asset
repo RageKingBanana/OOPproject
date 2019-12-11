@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do BEFORE an earthquake?
+  _info: What country has the most earthquakes?
   _answers:
-  - _info: Use your emergency kit.
+  - _info: Japan
     _isCorrect: 0
-  - _info: Prepare your emergency kit.
+  - _info: Indonesia
     _isCorrect: 1
-  - _info: Give away your emergency kit
+  - _info: China
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

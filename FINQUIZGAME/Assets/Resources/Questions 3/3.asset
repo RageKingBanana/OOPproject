@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 3
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 2-What should you do AFTER an earthquake?
   _answers:
   - _info: Go to a coffee house.
     _isCorrect: 0

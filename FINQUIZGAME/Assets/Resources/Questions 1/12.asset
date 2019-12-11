@@ -10,12 +10,21 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
-  m_Name: New Question
+  m_Name: 12
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: 
-  _answers: []
+  _info: 'A person can get this disease simply by wading or swimming in floods contaminated
+    with animal urine? '
+  _answers:
+  - _info: ' HIV'
+    _isCorrect: 0
+  - _info: Kidney Stones
+    _isCorrect: 0
+  - _info: Leptospirosis
+    _isCorrect: 1
+  - _info: Malaria
+    _isCorrect: 0
   _useTimer: 0
   _timer: 0
-  _answerType: 0
+  _answerType: 1
   _addScore: 10

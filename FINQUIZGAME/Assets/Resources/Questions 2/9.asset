@@ -13,13 +13,13 @@ MonoBehaviour:
   m_Name: 9
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING an earthquake?
+  _info: What is the most important thing to do during an earthquake?
   _answers:
-  - _info: Duck, cover and hold under somewhere stable
+  - _info: Duck, cover and hold under somewhere stable.
     _isCorrect: 1
   - _info: Run for the exits immediately.
     _isCorrect: 0
-  - _info: "Simply don\u2019t care."
+  - _info: Staying calm
     _isCorrect: 0
   _useTimer: 0
   _timer: 0

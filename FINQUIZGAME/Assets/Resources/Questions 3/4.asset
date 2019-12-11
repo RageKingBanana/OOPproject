@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: 4
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do AFTER an earthquake?
+  _info: 3-What should you do AFTER an earthquake?
   _answers:
   - _info: Use the water in the building.
     _isCorrect: 0

@@ -13,15 +13,18 @@ MonoBehaviour:
   m_Name: 8
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What should you do DURING a flood?
+  _info: A family is currently living in a household located in a low ground location.
+    The area is currently suffering the onslaught of a super typhoon. The flood started
+    to fill the premises. There are extension cords that are just laying on the ground
+    ? What is the danger that the family may suffer?
   _answers:
-  - _info: Watch Tulfo and chill.
+  - _info: Flood related injuries.
+    _isCorrect: 1
+  - _info: 'Man-made related injuries. '
     _isCorrect: 0
-  - _info: Host a party.
-    _isCorrect: 0
-  - _info: Shut off the electricity at the circuit breakers.
+  - _info: Electricity related injuries.
     _isCorrect: 1
   _useTimer: 0
   _timer: 0
-  _answerType: 1
+  _answerType: 0
   _addScore: 10
