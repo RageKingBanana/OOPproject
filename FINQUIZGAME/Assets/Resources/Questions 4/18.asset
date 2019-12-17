@@ -13,7 +13,8 @@ MonoBehaviour:
   m_Name: 18
   m_EditorClassIdentifier: 
   _infoImage: {fileID: 0}
-  _info: What to do DURING earthquakes?
+  _info: It is a way wherein local government agencies provide safety warnings through
+    television broadcasting, text messages alerts, and social media. What is it?
   _answers:
   - _info: Hazard mapping
     _isCorrect: 0

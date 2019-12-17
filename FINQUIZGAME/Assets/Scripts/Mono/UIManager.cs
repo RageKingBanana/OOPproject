@@ -619,7 +619,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (questiooon == "What can the local baranggay do to help prepare their subjects for a possible earthquake?")
                     {
-                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills.";
+                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drill and also Provide emergency kits.";
                         uIElements.ResolutionScoreText.text = "+" + score;
                     }
                     else if (questiooon == "What country has the most earthquakes?")
@@ -692,7 +692,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (questiooon == "What can the local baranggay do to help prepare their subjects for a possible earthquake?")
                     {
-                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills.";
+                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills and also Provide emergency kits.";
                         uIElements.ResolutionScoreText.text = "-" + score;
                     }
                     else if (questiooon == "What country has the most earthquakes?")
@@ -756,7 +756,7 @@ public class UIManager : MonoBehaviour {
                     }
                     else if (questiooon == "What can the local baranggay do to help prepare their subjects for a possible earthquake?")
                     {
-                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills.";
+                        uIElements.ResolutionStateInfoText.text = "Participate in office and community earthquake drills and also Provide emergency kits.";
                     }
                     else if (questiooon == "What country has the most earthquakes?")
                     {
