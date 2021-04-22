@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 6
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 0}
+  _infoImage: {fileID: 21300000, guid: dba2ca2b0e59fcc43a650dcc7c2c83b6, type: 3}
   _info: Why is the Philippines is considered to be an earthquake prone country?
   _answers:
   - _info: The Philippines is an archipelago.

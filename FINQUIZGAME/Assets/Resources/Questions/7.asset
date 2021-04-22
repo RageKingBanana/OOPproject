@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 7
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 0}
-  _info: Emergency kits should contain all of the essential tools that is needed for
-    survival. What is not included?
+  _infoImage: {fileID: 21300000, guid: dba2ca2b0e59fcc43a650dcc7c2c83b6, type: 3}
+  _info: Emergency kits should contain all of the essential tools that is needed
+    for survival. What is not included?
   _answers:
   - _info: Spare Batteries
     _isCorrect: 1

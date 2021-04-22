@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 1
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 0}
+  _infoImage: {fileID: 21300000, guid: de9e803b9da3b3e4ea8601829193a914, type: 3}
   _info: What are the possible effects of earthquakes?
   _answers:
   - _info: Aftershocks

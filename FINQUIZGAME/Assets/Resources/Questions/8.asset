@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe1e3773ddaa9ce48835846fb8e11c7f, type: 3}
   m_Name: 8
   m_EditorClassIdentifier: 
-  _infoImage: {fileID: 0}
+  _infoImage: {fileID: 21300000, guid: dba2ca2b0e59fcc43a650dcc7c2c83b6, type: 3}
   _info: Emergency kits should contain food in case of emergency, what is not needed?
   _answers:
   - _info: Canned goods

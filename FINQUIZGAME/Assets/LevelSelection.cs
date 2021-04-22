@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
-public class LevelSelection : MonoBehaviour
+public class  : MonoBehaviour
 {
 
     private int levelReached;
